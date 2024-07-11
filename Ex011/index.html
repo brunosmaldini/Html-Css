@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinamicas</h1>
+    <p>Tente abrir esse site em vairos dispositivos diferentes ou simplesmente diminua o tamnho do seu navegador</p>
+    <picture><!--tag para usar a source media type-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <!-- tamanho sempre com 50px a mais do tamanho da proxima imagem, se imagem M que sera exibida apos P tem 700px, logo se define 750px-->
+        <source media="(max-width:1050px )" srcset="imagens/foto-m.png" type="image/png"><!-- acima deste esta P-->
+     <img src="imagens/foto-g.png" alt="foto-g"><!-- foto g inserida aqui, acima esta a imagem M para se adaptar a janela-->
+    </picture><!-- OBS: É necessario colocar de G para P, sendo que P ficará sempre encima e G sempre embaixo, a ordem dessas tags precisam ser seguidas-->
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5.</p>
+    <audio preload="metadata" autoplay controls loop>
+    <!-- MP3, WAV, OGG-->
+        <source src="midia/Stranger Things Theme Song (C418 REMIX).mp3" type="audio/mpeg">
+        <source src="midia/Stranger Things Theme Song (C418 REMIX).ogg" type="audio/mpeg">
+        <source src="midia/Stranger Things Theme Song (C418 REMIX).wav" type="audio/mpeg">
+        <!-- tag acima igual, porem altera o formato do audio para WAV ou OGG-->
+        <!-- caso nao for possivel, coloque uma tag para informar incompatibilidade-->
+        <p>Infelizmente seu navegador nao consegue reproduzir audio. <a href="midia/Stranger Things Theme Song (C418 REMIX).zip" download="musica.zip" type="application/zip"></a>Clique aqui para baixar.</p>
+     </audio>
+</body>
+</html>

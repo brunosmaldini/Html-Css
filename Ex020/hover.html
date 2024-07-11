@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div:hover{ /* Deixa o texto em vermelho ao passar mouse encima*/
+            color: red;
+        }
+        div:hover>p{ /* Quando passr mouse encima ira exibir o texto escondido de p dentro da div nas config abaixo */
+            display: block;
+            color: white;
+            background-color: red;
+            width: 200px;
+            border: 1px solid black;
+        }
+        div>p{ /* Esta usando display:none para esconder o texto dentro da div */
+            display: none;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse sobre texto abaixo</p>
+    <div>Passe o mouse aqui
+        <p><img src="imagem01.jpg" alt="circo" width="350px"></p>
+        <p>FIM DO EXEMPLO.</p>
+    </div>
+    
+</body>
+</html>

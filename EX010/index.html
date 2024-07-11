@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Voce pode acessar meu <a href="https://www.favicon.cc/" target="_blank" rel="external">repositorio publico no GitHub</a></p><!-- Dessa forma o site abrirá em nova aba ao inves de fechar a aba atual-->
+    <p>Voce tambem pode acessar <a href="https://favicon.io/#google_vignette"> meu canal gratuito do Youtube</a></p>
+    <h1>Usando Links Internos</h1><!--Target _blank para pagina em branco-->
+    <p>Esta é a primeira pagina do meu site, voce pode ir para a <a href="pag002.html" target="_blank" rel="next">minha segunda pagina</a></p><!--  rel=next para informar que e a pagina seguinte-->
+    <p>Voce tambem pode acessar <a href="noticias/pag003.html" target="_self" rel="next">nossa pagina de noticias.</a></p><!-- href acima precisa ser acessado via ctrl+space para poder criar o caminho dentro do codigo. target=self para indicar para abrir na mesma aba, utilizado para quando se avança ou retorna dentro do mesmo site.-->
+    <h1>Link para download</h1>
+    <ol>Baixar livros em pdf</ol>
+    <li><a href="livro/imagem.jpg.jpg" download="imagem.jpg" type="image/jpeg">Baixar imagem em JPG</a></li>
+    <li><a href="livro/imagemcompact.zip" download="imagemcompact.zip" type="application/zip">Baixar imagem compactada</a></li>
+</body>
+</html>

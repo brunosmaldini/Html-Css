@@ -1,0 +1,32 @@
+@charset "UFT-8";
+/*
+em HTML é id= em CSS é #
+em HTML é class= em CSS é . */
+body {
+    background-color: #82db8f71;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: #09D928;
+}
+#principal{
+    color: #90D909;
+    text-align: center;
+    background-color: #39d9092f;
+    
+}
+h2{
+    color: #39D909;
+}
+.basico{
+    color: brown;
+}
+.interdiario{
+    color: chocolate;
+}
+.avançado{
+    color: darkmagenta;
+}
+.destaque{
+    background-color: rgb(179, 132, 14);
+}

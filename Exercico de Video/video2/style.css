@@ -1,0 +1,16 @@
+@charset "UFT-8";
+*{
+    body{
+        background-image: linear-gradient(to right,#9FC131,#DBF227,#D6D58E);
+    }
+}
+main{
+    background-color: white;
+    width: 600px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px #005C53;
+    box-sizing: border-box;
+}
+
+
