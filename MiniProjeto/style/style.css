@@ -196,5 +196,4 @@ footer a{ /* pode tambem fazer "footer>p>a" para informar que sera todo link den
 footer a:hover{
      text-decoration: underline;
      color:var(--cor02);
-     position: ;
 }
